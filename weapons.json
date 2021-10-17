@@ -1,0 +1,50 @@
+{
+    "revolvers" : [
+        "Cattleman Revolver", "Schofield Revolver", "LeMat Revolver", "Navy Revolver",
+        "Double-Action Revolver"
+    ],
+    "pistols" : [
+        "Volcanic Pistol", "Semi Automatic Pistol", "Mauser Pistol"
+    ],
+    "sawed-off" : [
+        "Sawed-Off Shotgun"
+    ],
+    "repeaters" : [
+        "Carbine Repeater", "Lancaster Repeater", "Litchfield Repeater", "Evans Repeater"
+    ],
+    "rifles" : [
+        "Bolt-Action Rifle", "Varmint Rifle", "Springfield Rifle", "Elephant Rifle",
+        "Rolling Block Rifle", "Carcano Rifle"
+    ],
+    "shotguns" : [
+        "Rare Shotgun", "Pump Action Shotgun", "Repeating Shotgun", "Double-Barreled Shotgun",
+        "Semi-Auto Shotgun"
+    ],
+    "bows" : [
+        "Bow", "Improved Bow"
+    ],
+    "thrown" : [
+        "Lasso", "Dynamite", "Tomahawk", "Throwing Knife", "Fire Bottle", "Reinforced Lasso",
+        "Bolas", "Toxic Moonshine"
+    ],
+    "melee" : [
+        "Hunting Knife", "Unarmed (Fist)", "Hatchet", "Hunter Hatchet", "Cleaver", "Jawbone Knife",
+        "Machete", "Águila Machete", "Lance Knife", "Hammer", "Flammable Moonshine", "Zavala Machete"
+    ],
+    "bullets" : [
+        "Regular", "High Velocity", "Split Point", "Express", "Explosive"
+    ],
+    "shells" : [
+        "Regular", "Buckshot Incendiary", "Slug", "Explosive"
+    ],
+    "arrows" : [
+        "Regular", "Small Game", "Improved", "Poison", "Fire", "Dynamite"
+    ],
+    "varmint" : [
+        "Regular", "Sedative"
+    ],
+    "elephant" : [
+        "Nitro Express"
+    ],
+    "MAX WEAPONS" : 4
+}
