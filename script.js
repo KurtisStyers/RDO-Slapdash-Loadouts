@@ -19,28 +19,33 @@ const getWeaponType = (equipSlot) => {
 
 }
 
+const getWeapon = (weaponType) => {
+    return weapons[weaponType][getRandom(weapons[weaponType].length) - 1];
+}
+
 const buildLoadout = () => {
     const numEquip = getRandom(weapons['MAX WEAPONS']);
-    let mainHand = getWeaponType("sidearm");
-    let offHand = getWeaponType("sidearm");
-    let shoulder = getWeaponType("longarm");
-    let back = getWeaponType("longarm");
+    let equipment = [];
 
     if (numEquip === 1) {
-        equipment.push(weapons[mainHand][getRandom(weapons[mainHand].length) - 1]);
+        equipment.push(getWeapon(getWeaponType("sidearm")));
     } else if (numEquip === 2) {
-        equipment.push(weapons[mainHand][getRandom(weapons[mainHand].length) - 1]);
-        equipment.push(weapons[shoulder][getRandom(weapons[shoulder].length) - 1]);
+        equipment.push(getWeapon(getWeaponType("sidearm")));
+        equipment.push(getWeapon(getWeaponType("longarm")));
     } else if (numEquip === 3) {
-        equipment.push(weapons[mainHand][getRandom(weapons[mainHand].length) - 1]);
-        equipment.push(weapons[shoulder][getRandom(weapons[shoulder].length) - 1]);
-        equipment.push(weapons[offHand][getRandom(weapons[offHand].length) - 1]);
+        equipment.push(getWeapon(getWeaponType("sidearm")));
+        equipment.push(getWeapon(getWeaponType("longarm")));
+        equipment.push(getWeapon(getWeaponType("sidearm")));
     } else if (numEquip === 4) {
-        equipment.push(weapons[mainHand][getRandom(weapons[mainHand].length) - 1]);
-        equipment.push(weapons[shoulder][getRandom(weapons[shoulder].length) - 1]);
-        equipment.push(weapons[offHand][getRandom(weapons[offHand].length) - 1]);
-        equipment.push(weapons[back][getRandom(weapons[back].length) - 1]);
+        equipment.push(getWeapon(getWeaponType("sidearm")));
+        equipment.push(getWeapon(getWeaponType("longarm")));
+        equipment.push(getWeapon(getWeaponType("sidearm")));
+        equipment.push(getWeapon(getWeaponType("longarm")));
     } else {
         return "Error - Number of MAX WEAPONS invalid";
     }
+
+    return equipment;
 }
+
+console.log(buildLoadout());
